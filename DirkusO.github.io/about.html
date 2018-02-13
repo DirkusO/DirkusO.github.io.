@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Minimal Business Website White">
+    <meta name="author" content="Dirk Steynberg 2018">
+    <link rel="icon" href="../../../../favicon.ico">
+    <link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+
+    <title>Dirk Steynberg - About Me</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="css/animations.css">
+
+</head>
+
+
+<body id="text-fade-in">
+
+    <!-- Menu -->
+    <div class="menu-icon">
+        <span class="menu-icon__line menu-icon__line-left"></span>
+        <span class="menu-icon__line"></span>
+        <span class="menu-icon__line menu-icon__line-right"></span>
+    </div>
+
+    <div class="nav">
+        <div class="nav__content">
+            <ul class="nav__list">
+                <li class="nav__list-item"><a class="nav-button" href="projects.html">Projects</a></li>
+                <li class="nav__list-item"><a class="nav-button active" href="about.html">About</a></li>
+                <li class="nav__list-item"><a class="nav-button" href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Content -->
+
+    <!-- Page Header -->
+    <header class="business-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="display-3 text-center text-black mt-4"></h1>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Content -->
+    <div class="container" id="stage text-fade-in-two">
+
+        <div class="row">
+            <div class="col-sm-4">
+                <img src="/media/me.jpg" class="rounded-circle img-fluid" alt="Dirk Steynberg">
+            </div>
+            <div class="col-sm-8">
+                <h2 class="mt-4">About Me</h2>
+                <p>From a young age, I was an avid tech junkie. In every respect, I would find any opportunity to get my hands on any hardware or software that happened my way. From building my own computer to eventually writing my own applications.
+                    </br/> The addiction only got worse after conceding to audio and visual engineering. Creating video content, mixing and recording music and the amazing things technology and hardware was capable of doing. Not long after, the infatuation of software and programming took hold.
+                    </br/> I now work in web development and learn in the most progressive and faced paced industry I have come to experience. I have been quick and eager to learn and have found a place as a Web Developer and aspiring Web Applications Developer. I still consider myself a music and film junkie, but equally thrive in the world of DevOps and look forward to building a strong and reputable career in my field.
+                    </br/> Tom Morello and Chris Cornell are as much appreciated as coffee in a 500ml star wars mug. </p>
+                <p>
+                    <a class="btn btn-light btn-lg" href="projects.html">My Projects &raquo;</a>
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+                <h2 class="mt-4">Skills</h2>
+                <hr/>
+            </div>
+            <div class="col-sm-8">
+                
+                
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer-bottom fixed-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <!--Footer Bottom-->
+                        <p class="text-xs-center">&copy; Copyright 2018 - Dirk Steynberg. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Bootstrap core JavaScript -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script>
+            console.clear();
+
+            const app = (() => {
+                let body;
+                let menu;
+                let menuItems;
+
+                const init = () => {
+                    body = document.querySelector('body');
+                    menu = document.querySelector('.menu-icon');
+                    menuItems = document.querySelectorAll('.nav__list-item');
+
+                    applyListeners();
+                }
+
+                const applyListeners = () => {
+                    menu.addEventListener('click', () => toggleClass(body, 'nav-active'));
+                }
+
+                const toggleClass = (element, stringClass) => {
+                    if (element.classList.contains(stringClass))
+                        element.classList.remove(stringClass);
+                    else
+                        element.classList.add(stringClass);
+                }
+
+                init();
+            })();
+
+        </script>
+
+</body>
+
+</html>

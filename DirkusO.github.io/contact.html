@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Minimal Business Website White">
+    <meta name="author" content="Dirk Steynberg 2018">
+    <link rel="icon" href="../../../../favicon.ico">
+    <link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+
+    <title>Minimal Business Website White</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="css/animations.css">
+
+</head>
+
+
+<body id="text-fade-in">
+
+    <!-- Menu -->
+    <div class="menu-icon">
+        <span class="menu-icon__line menu-icon__line-left"></span>
+        <span class="menu-icon__line"></span>
+        <span class="menu-icon__line menu-icon__line-right"></span>
+    </div>
+
+    <div class="nav">
+        <div class="nav__content">
+            <ul class="nav__list">
+                <li class="nav__list-item"><a class="nav-button" href="projects.html">Projects</a></li>
+                <li class="nav__list-item"><a class="nav-button" href="about.html">About</a></li>
+                <li class="nav__list-item"><a class="nav-button active" href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- Page Content -->
+    
+    <!-- Footer -->
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script>
+        console.clear();
+
+        const app = (() => {
+            let body;
+            let menu;
+            let menuItems;
+
+            const init = () => {
+                body = document.querySelector('body');
+                menu = document.querySelector('.menu-icon');
+                menuItems = document.querySelectorAll('.nav__list-item');
+
+                applyListeners();
+            }
+
+            const applyListeners = () => {
+                menu.addEventListener('click', () => toggleClass(body, 'nav-active'));
+            }
+
+            const toggleClass = (element, stringClass) => {
+                if (element.classList.contains(stringClass))
+                    element.classList.remove(stringClass);
+                else
+                    element.classList.add(stringClass);
+            }
+
+            init();
+        })();
+
+    </script>
+
+</body>
+
+</html>
